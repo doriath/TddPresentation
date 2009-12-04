@@ -1,1 +1,54 @@
-To jest test
+Opis prezentacji:
+
+Writing tests
+ * Why to write tests ?
+ * Types of tests
+  * Unit tests
+  * Integration tests
+  * Acceptance / Functional tests
+TDD - Test Driven Development
+ * Traditional development cycle vs Test-driven develompent cycle
+  * design -> code -> test
+  * test -> code -> design (red - green - refactor)
+Steps in TDD
+ * First we write a test
+ * Then we write just enough code
+ * And then we refactor
+//Developing in small increments
+//Evolutionary design
+//Discipline is required
+//Keeping code healthy with refactoring
+//Specification by example
+Advatages of TDD
+ * High quality code
+ * Less time spent fixing defects
+Testing frameworks
+ * Unit tests frameworks
+  * MbUnit (Gallio)
+  * NUnit
+  * Visual Unit
+ * Mocking frameworks
+  * NMock
+  * EasyMock.Net
+  * TypeMock Isolator (Commercial)
+  * Moq
+  * Rhino Mocks
+ * Acceptance tests
+  * Selenium
+  * WatiN
+  * White
+MbUnit Overview 
+ * Basic attributes
+  * TestFixture
+  * Test
+  * SetUp
+  * ?TearDown
+ * Asserts
+  * AreEquals
+  * AreAproximatelyExuals
+  * ?Collections
+  * Throws
+  * and more
+Dependency Injection
+ * overview
+Examples
