@@ -1,0 +1,484 @@
+\documentclass[slidestop,compress,mathserif]{beamer}
+%\documentclass{beamer} 
+\usepackage{beamerthemeshadow}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}	%listingi
+%\usepackage[T1]{polski}
+%\usepackage[polski]{babel}	%znaki diaketryczne
+\usepackage{polski}
+
+%\usepackage[bars]{beamerthemetree} % Beamer theme v 2.2
+\usetheme{Berlin}                  % Beamer theme v 3.0
+%\usecolortheme{lily}                % Beamer color theme
+
+%\lstset{language=R,frame=ltrb,framesep=5pt,basicstyle=\normalsize,keywordstyle=\ttfamily\color{OliveGreen},identifierstyle=\ttfamily\color{CadetBlue}\bfseries,commentstyle=\color{Brown},stringstyle=\ttfamily,showstringspaces=ture}
+\lstset{language=C++}
+
+\title{TDD}
+\author{Piotr Ślatała, Tomasz Żurkowski}
+%\institute{}
+\begin{document}
+%\begin{frame}                       % Cover slide
+\section{TDD}
+%\subsection{Plan prezentacji}
+
+\subsection{Wstęp}
+\frame{
+ \titlepage
+}
+%\end{frame}
+% Instead, you can use \frame{\titlepage}} (Beamer v 2.2 macro)
+
+\begin{frame}
+ \frametitle{Plan prezentacji}
+ \begin{enumerate}
+ \item Idea testów
+ \pause \item TDD
+ \pause \item Frameworki do testowania
+ \pause \item Mocki
+ \pause \item Dependency Injection / kontenery
+\end{enumerate}
+
+\end{frame}
+
+
+%\begin{frame}
+\begin{frame}
+ \frametitle{Wstęp}
+%\begin{itemize}
+
+%\item Programowanie obiektowe modeluje świat za pomocą obiektów, które posiadają atrybuty i metody.
+%\end{itemize}
+\begin{block}{Programowanie obiektowe}
+ W obiektowym paradygmacie programowania modeluje się projekt z użyciem obiektów - czyli elementów, które mają swój stan, oraz zachowanie, czyli metody które można na nich wykonać.
+\end{block}
+\pause
+\begin{block}{}
+ Taka technika programowania jest dla człowieka dość intuicyjna, stąd jej popularność. Wiąże ponadto dane z zachowaniem, czego paradygmat proceduralny nie oferował.
+\end{block}
+\end{frame}
+
+\defverbatim[colored]\proccode{%
+   \begin{lstlisting}[frame=single,emph={ga},emphstyle=\color{olive}]
+int dlugosc = dlugoscTekstu(string);
+string kawalek = kawalekTekstu(string, od, do);
+bool porownanie = porownajDwaTeksty(string1, string2);
+\end{lstlisting}}%
+\defverbatim[colored]\oopcode{%
+   \begin{lstlisting}[frame=single,emph={ga},emphstyle=\color{olive}]
+int dlugosc = string.Dlugosc();
+string kawalek = string.Wytnij(od, do);
+bool porownanie = string1.JestRowny(string2);
+\end{lstlisting}}%
+\frame{%
+   \frametitle{Przykład proceduralny oraz OOP}
+   \proccode
+   \oopcode
+}%
+
+
+\begin{frame}
+ \frametitle{Modelowanie świata}
+%\begin{figure}
+% \centering
+% \includegraphics[width=250pt]{gfx/kosz_owocow.jpg}
+ % kosz_owocow.jpg: 800x600 pixel, 72dpi, 28.22x21.17 cm, bb=0 0 800 600
+%\end{figure}
+\end{frame}
+
+\begin{frame}
+ \frametitle{Modelowanie świata}
+%\begin{figure}
+ %\centering
+ %\includegraphics[width=125pt]{gfx/koszyk.jpg}
+ %\includegraphics[width=125pt]{gfx/jablko.jpg}
+ % koszyk.jpg: 567x489 pixel, 72dpi, 20.00x17.25 cm, bb=0 0 567 489
+%\end{figure}
+
+\end{frame}
+
+%\end{frame}
+\note{W programowaniu obiektowym patrzymy na świat poprzez pryzmat obiektów.
+%drzewo -> zerwij jabłko,
+Jest to podejście inne od tradycyjnego, gdzie używaliśmy funkcji i procedur, dzięki którym decydowaliśmy o działaniu programu.
+A gdybyśmy tak zdefiniowali następujące obiekty:
+Koszyk i Jabłko. Jabłko, co jest oczywiste, jest owocem. Do Koszyka możemy włożyć bądź wyjąć dowolny owoc. Możemy także zjeść wszystko, co jest owocem. W zasadzie każdy owoc, w ten czy inny sposób możemy obrać.
+
+Tak więc zdefiniowaliśmy nasz świat, na którym będziemy się opierać do końca tej prezentacji.
+%Koszyk.Włóż(Jabłko)
+%Jabłko = Koszyk.Wyjmij();
+
+%Owoc.Zjedz()
+%obieranie jabłka i obieranie orzecha (nóż, dziadek do orzechów)
+}
+
+%\subsection{Co to jest}    % Bookmark information
+\begin{frame}
+ Obiekty:
+\begin{itemize}
+\pause
+\item Koszyk
+\pause
+\item Owoc
+\pause
+\begin{itemize}
+\item Jabłko
+\item Gruszka
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Cechy programowania obiektowego}
+\begin{itemize}
+\item \textit{Abstrakcja}
+\item Enkapsulacja
+\item Polimorfizm
+\item Dziedziczenie
+\end{itemize}
+\end{frame}
+\note{
+\begin{itemize}
+\item Abstrakcja - to cecha, która wynika z samej idei programowania obiektowego. Przyjmuje się, ze obiekty wykonują jakieś czynności - nie interesuje nas w danym momencie, w jaki sposób je wykonują. 
+Może ``obierz owoc'' obiera jabłko ręcznie, a może używa do tego maszyny. Dla Sierotki Marysi / Czerwonego kapturka (niepotrzebne skreślić) to nie ma znaczenia - ważne, że potrzebuje obrane jabłko.
+\item Dziedziczenie - pozwala obiektom przyjąć pola i metody rodzica
+\item Enkapsulacja - ``ukrywanie implementacji''. Obiekty przedstawiają swój interfejs, z którego mogą inne elementy systemu korzystać, bez wiedzy o implementacji, oraz bez możliwości zmodyfikowania elementów klasy, które nie powinny być modyfikowane przez zewnętrzne obiekty.
+\item Polimorfizm - dzięki tej cesze, możemy definiować zachowanie obiektu klas dziedziczących.
+}
+
+\begin{frame}
+\frametitle{Klasa}
+Definiuje stan i zachowanie rodzaju obiektu. Jej wystąpienie nazywamy ''instancją`` bądź ''obiektem``.
+\begin{itemize}
+\pause
+\item Pola / atrybuty
+\pause
+\item Metody
+\end{itemize}
+\end{frame}
+\note{
+\begin{itemize}
+\item Pola zawierają informacje dotyczące własności klasy. Np. ilość jabłek w koszyku
+\item Metody wyszczególniają operacje na obiekcie. Np. Włóż, Wyjmij (z konkretnego koszyka, z konkretnej instancji)
+\end{itemize}
+}
+
+\section{Wstęp, przykłady w C++}
+\subsection{Przykładowa klasa, inline}
+\begin{frame}
+\frametitle{Cykl życia obiektu}
+Każdy obiekt musi kiedyś zostać utworzony i kiedyś się zakończyć.
+\begin{itemize}
+\pause
+\item Utworzenie obiektu = wywołanie konstruktora
+\pause
+\item Odwołanie się do dowolnej ilości metod i pól
+\pause
+\item Usunięcie obiektu = wywołanie destruktora (zwolnienie pamięci!) \footnote{Chociaż nie zawsze! W językach takich jak Java czy C\# za zwolnienie pamięci odpowiada Garbage Collector}
+\end{itemize}
+\end{frame}
+\note{
+\begin{itemize}
+\item W konstruktorze wykonujemy niezbędne czynności inicjalizacyjne. Ustawiamy początkowe wartości zmiennych, rezerwujemy pamięć na niezbędne obiekty, etc.
+\item W czasie istnienia obiektu możemy wykonywać dowolne operacje.
+\item W momencie, kiedy uznamy, że obiekt nie jest już potrzebny, należy zwolnić cała zarezerwowaną przez niego pamięć. W przypadku, gdy o tym zapomnimy, powstaje tak zwany ''wyciek pamięci``, w efekcie którego program może zająć całą dostępną pamięć.
+\end{itemize}}
+
+\defverbatim[colored]\testcode{%
+   \begin{lstlisting}[frame=single,emph={ga},emphstyle=\color{olive}]
+class PrzykladowaKlasa {
+public:
+  void Wyswietl() {
+    cout << "wyswietlam\n";
+  }
+};
+int main() {
+  PrzykladowaKlasa przyklad;
+  PrzykladowaKlasa* przykladWskaznik;
+  przykladWskaznik = new PrzykladowaKlasa();
+  przyklad.Wyswietl();
+  przykladWskaznik->Wyswietl();
+  delete(przykladWskaznik);
+}
+\end{lstlisting}}%
+\frame{%
+   \frametitle{Przykładowa klasa}
+   \testcode
+}%
+
+\defverbatim[colored]\testcode{%
+   \begin{lstlisting}[frame=single,emph={ga},emphstyle=\color{olive}]
+class PrzykladowaKlasa
+{
+        public:
+                void Wyswietl();
+};
+void PrzykladowaKlasa::Wyswietl()
+{
+
+        cout << "wyswietlam\n";
+}
+\end{lstlisting}}%
+\frame{%
+   \frametitle{Przykładowa klasa, nie inline}
+   \testcode
+}%
+\defverbatim[colored]\testcode{%
+   \begin{lstlisting}[frame=single,emph={ga},emphstyle=\color{olive}]
+PrzykladowaKlasa* przykladWskaznik;
+
+przykladWskaznik = new PrzykladowaKlasa();
+
+przykladWskaznik->Wyswietl();
+
+delete(przykladWskaznik);
+\end{lstlisting}}%
+\subsection{Krótka dygresja o wskaźnikach}
+\begin{frame}
+ \frametitle{Tworzenie obiektów i wskaźniki}
+ W kilku sytuacjach będziemy się posługiwać pojęciem wskaźnika. 
+ \begin{itemize}
+ \pause
+ \item Słowo kluczowe \textbf{new} odpowiada za utworzenie obiektu
+ \pause
+ \item NazwaTypu\textbf{*} - gwiazdka oznacza wskaźnik do danej struktury. Wskaźnik sam w sobie nie przechowuje żadnych danych, poza informacją, gdzie dana struktura w pamięci się znajduje.
+ \pause
+ \item delete(nazwaObiektu) - służy do usunięcia obiektu z pamięci.
+\end{itemize}
+\pause
+\testcode
+\end{frame}
+
+\subsection{Specyfikatory dostępu}
+\begin{frame}
+ \frametitle{Specyfikatory dostępu}
+ Elementy klasy mogą być zdefiniowane dla różnych poziomów dostępu
+\begin{itemize}
+ \pause
+ \item \textbf{public} - widoczne dla wszystkich
+ \pause
+ \item \textbf{protected} - widoczne dla składowych klasy i potomnych
+ \pause
+ \item \textbf{private} - widziane wyłącznie przez składowe klasy
+\end{itemize}
+\end{frame}
+\note{
+\begin{itemize}
+ \pause
+ \item \textbf{public} - widoczne dla wszystkich, co oznacza, że każdy element (składowa klasy, klasy potomnej, a także inne, nie związane elementy kodu, mogą się odwołać do danego pola / metody
+ \pause
+ \item \textbf{protected} - widoczne dla składowych klasy i potomnych - oznacza, że tylko obiekty jawnie dziedziczące po wybranej klasie mogą używać danego pola / metody. Inne elementy systemu nie mogą go modyfikować.
+ \pause
+ \item \textbf{private} - widziane wyłącznie przez składowe klasy - oznacza to, iż nawet klasy dziedziczące nie mogą wykonać / zmodyfikować pól bądź metod z tym specyfikatorem dostępu
+ \pause
+\end{itemize}
+}
+
+\defverbatim[colored]\testcode{%
+   \begin{lstlisting}[frame=single,emph={ga},emphstyle=\color{olive}]
+class Nazwa // : public InnaNazwa
+{
+public:
+ int ZmiennaPubliczna;
+ void ProceduraPubliczna();
+protected:
+ double ZmiennaProtected;
+ void ProceduraProtected();
+private:
+ double ZmiennaPrywatna;
+ void ProceduraPrywatna();
+};
+\end{lstlisting}}%
+\frame{%
+   \frametitle{Specyfikatory dostępu}
+   \testcode
+}%
+
+\defverbatim[colored]\testcode{%
+   \begin{lstlisting}[frame=single,emph={ga},emphstyle=\color{olive}]
+int main() {
+  Nazwa obiekt;
+  obiekt.ProceduraPubliczna();
+  cout << obiekt.ZmiennaPubliczna << "\n"; 
+  //printf("%d\n", obiekt.ZmiennaPubliczna);
+
+  //ponizsze spowoduja blad kompilacji
+  //obiekt.ProceduraProtected();
+  //obiekt.ProceduraPrivate();
+}
+\end{lstlisting}}%
+\frame{%
+   \frametitle{Specyfikatory dostępu - public}
+   \testcode
+}%
+
+\defverbatim[colored]\testcode{%
+   \begin{lstlisting}[frame=single,emph={ga},emphstyle=\color{olive}]
+class Nazwa2 : public Nazwa {
+ ...
+  void Metoda() {
+    this->ProceduraPubliczna();
+    cout << this->ZmiennaPubliczna << "\n"; 
+    this->ProceduraProtected();
+
+    //ponizsze spowoduje blad kompilacji
+    //this->ProceduraPrivate();
+  }
+}
+\end{lstlisting}}%
+\frame{%
+   \frametitle{Specyfikatory dostępu - protected}
+   \testcode
+}%
+
+\defverbatim[colored]\testcode{%
+   \begin{lstlisting}[frame=single,emph={ga},emphstyle=\color{olive}]
+class Nazwa {
+ ...
+  void Metoda() {
+    this->ProceduraPubliczna();
+    cout << obiekt.ZmiennaPubliczna << "\n"; 
+    this->ProceduraProtected();
+    this->ProceduraPrivate();
+  }
+}
+\end{lstlisting}}%
+\frame{%
+   \frametitle{Specyfikatory dostępu - private}
+   \testcode
+}%
+
+\section{Abstrakcja, enkapsulacja, dziedziczenie, polimorfizm}
+\subsection{Klasa abstrakcyjna, metoda wirtualna, dziedziczenie}
+\begin{frame}
+ \begin{itemize}
+ \item Klasa abstrakcyjna - to klasa, której nie można utworzyć instancji
+ \pause
+ \item Metoda wirtualna - może być przedefiniowana w klasie potomnej
+ \pause
+ \item Dziedziczenie
+\end{itemize}
+\end{frame}
+\note{
+ \begin{itemize}
+ \item Klasa abstrakcyjna - to klasa, której nie można utworzyć instancji. Wynika to z faktu, iż nie jest w pełni zaimplementowana. 
+ \pause
+ \item Metoda wirtualna - może być przedefiniowana w klasie potomnej. W przypadku wywołania jej na klasie macierzystej, sprawdzane jest w czasie uruchomienia (a nie w czasie kompilacji), na jakim obiekcie powinna zostać wykonana. Dzięki temu jest możliwość nadpisania domyślnego zachowania (który został odziedziczony z klasy macierzystej).
+ \pause
+ \item Dziedziczenie - otrzymanie z klasy macierzystej metod i pól
+}
+\defverbatim[colored]\testcode{%
+   \begin{lstlisting}[frame=single,emph={ga},emphstyle=\color{olive}]
+class Owoc {
+public:
+	bool CzyWarzywo() {
+		return false;
+	}
+	virtual bool CzyJadalne() = 0;
+};
+class Jablko : public Owoc {
+public:
+	bool CzyJadalne() {
+		return true;
+	}
+};
+\end{lstlisting}}%
+\frame{%
+   \frametitle{Dziedziczenie i klasa abstrakcyjna - przykład}
+   \testcode
+}
+\note{
+Aby klasa była abstrakcyjna (czyli taka, dla której NIE WOLNO (kompilator nie pozwoli) utworzyć instancji, wystarczy choćby jedną metodę zrobić abstrakcyjną. W naszym przypadku jest to metoda - CzyJadalne();.
+Kazda klasa, która będzie dziedziczyć z klasy Owoc \textbf{MUSI} tę metodę zaimplementowac.\\
+Widzimy tutaj także, iż klasa Jabłko dziedziczy po owocu, zyskując przy tym metodę CzyWarzywo(), która zawsze odpowiada ''nie``}
+%\begin{frame}
+%
+% \begin{itemize}
+% \item 
+%\end{itemize}
+%\end{frame}
+
+
+
+
+%klasyfikatory dostępu
+%konstruktory
+%dziedziczenie
+%i przykład dziedziczenia, enkapsulacji, polimorfizmu
+
+\defverbatim[colored]\owocfail{%
+   \begin{lstlisting}[frame=single,emph={ga},emphstyle=\color{olive}]
+In function 'int main()':
+error: cannot declare variable 'owoc' to be of 
+abstract type 'Owoc' because the following 
+virtual functions are pure within 'Owoc':
+virtual void Owoc::PodajNazwe()
+\end{lstlisting}}%
+\frame{%
+   \frametitle{Próba utworzenia wystąpienia klasy abstrakcyjnej}
+   \pause
+   \owocfail
+}%
+
+\defverbatim[colored]\testcode{%
+   \begin{lstlisting}[frame=single,emph={ga},emphstyle=\color{olive}]
+class Owoc 
+{
+public:
+ Owoc() 
+ {
+  //na poczatku nasz owoc nie jest zjedzony, 
+  //ani obrany
+  czyZjedzone = false;
+  czyObrany = false;
+  cout << "Tworzenie owoca\n";
+ }
+};
+\end{lstlisting}}%
+\frame{%
+   \frametitle{Konstruktor}
+   \pause
+   \testcode
+}%
+\note{
+Konstruktor jest zawsze wykonany w czasie tworzenia obiektu. Dla klasy można zdefiniować kilka konstruktorów, zawsze jeden musi zostać wykonany. Domyślnym konstruktorem jest konstruktor bezargumentowy, który nie robi nic. Zdefiniowanie innego konstruktora powoduje, że klasa już nie ma domyślnego konstruktora. Jeśli programista chce, może sam go napisać}
+
+\section{Przykład}
+\subsection{Diagram klas}
+\begin{frame}
+ \frametitle{Diagram klas}
+ Przykładowy diagram:
+% \begin{figure}
+%\centering
+%\includegraphics[width=250pt]{gfx/ClassDiagram1.pdf}
+%\end{figure}
+
+%\begin{figure}
+ %\centering
+
+ % ClassDiagram1.png: 389x271 pixel, 72dpi, 13.72x9.56 cm, bb=0 0 389 271
+%\end{figure}
+
+\end{frame}
+\note{
+Diagramy klas stosuje się do projektowania aplikacji. Przedstawiają obiekty i zależności między nimi.
+Na załączonym rysunku widzimy, iż klasa ''Jabłko`` dziedziczy z klasy ''Owoc``.
+}
+
+\subsection{Przykładowy program}
+\frametitle{Kod w C++}
+\begin{frame}
+ \begin{enumerate}
+ \item Owoc
+ \pause
+ \item Jabłko
+ \pause 
+ \item Gruszka
+ \pause
+ \item Koszyk
+ \pause
+ \item Uruchomienie
+\end{enumerate}
+\end{frame}
+
+\end{document}
