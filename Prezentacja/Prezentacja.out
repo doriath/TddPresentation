@@ -1,11 +1,12 @@
 \BOOKMARK [1][]{Outline1}{TDD}{}
 \BOOKMARK [2][]{Outline1.1.1}{Wstep}{Outline1}
-\BOOKMARK [1][]{Outline2}{Wstep, przyklady w C++}{}
-\BOOKMARK [2][]{Outline2.1.20}{Przykladowa klasa, inline}{Outline2}
-\BOOKMARK [2][]{Outline2.2.26}{Kr\363tka dygresja o wskaznikach}{Outline2}
-\BOOKMARK [2][]{Outline2.3.31}{Specyfikatory dostepu}{Outline2}
-\BOOKMARK [1][]{Outline3}{Abstrakcja, enkapsulacja, dziedziczenie, polimorfizm}{}
-\BOOKMARK [2][]{Outline3.1.39}{Klasa abstrakcyjna, metoda wirtualna, dziedziczenie}{Outline3}
-\BOOKMARK [1][]{Outline4}{Przyklad}{}
-\BOOKMARK [2][]{Outline4.1.47}{Diagram klas}{Outline4}
-\BOOKMARK [2][]{Outline4.2.48}{Przykladowy program}{Outline4}
+\BOOKMARK [1][]{Outline2}{TDD}{}
+\BOOKMARK [1][]{Outline3}{Wstep, przyklady w C++}{}
+\BOOKMARK [2][]{Outline3.1.35}{Przykladowa klasa, inline}{Outline3}
+\BOOKMARK [2][]{Outline3.2.41}{Kr\363tka dygresja o wskaznikach}{Outline3}
+\BOOKMARK [2][]{Outline3.3.46}{Specyfikatory dostepu}{Outline3}
+\BOOKMARK [1][]{Outline4}{Abstrakcja, enkapsulacja, dziedziczenie, polimorfizm}{}
+\BOOKMARK [2][]{Outline4.1.54}{Klasa abstrakcyjna, metoda wirtualna, dziedziczenie}{Outline4}
+\BOOKMARK [1][]{Outline5}{Przyklad}{}
+\BOOKMARK [2][]{Outline5.1.62}{Diagram klas}{Outline5}
+\BOOKMARK [2][]{Outline5.2.63}{Przykladowy program}{Outline5}

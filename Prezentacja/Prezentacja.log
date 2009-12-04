@@ -1,4 +1,4 @@
-This is pdfeTeXk, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=pdflatex 2009.11.19)  4 DEC 2009 21:47
+This is pdfeTeXk, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=pdflatex 2009.11.19)  4 DEC 2009 22:10
 entering extended mode
  file:line:error style messages enabled.
  %&-line parsing enabled.
@@ -784,27 +784,27 @@ File: lstmisc.sty 2004/09/07 1.3 (Carsten Heinz)
 ) (./Prezentacja.aux)
 \openout1 = `Prezentacja.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 20.
-LaTeX Font Info:    Try loading font information for OT4+cmr on input line 20.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 21.
+LaTeX Font Info:    Try loading font information for OT4+cmr on input line 21.
 
 (/usr/share/texmf/tex/latex/platex/ot4cmr.fd
 File: ot4cmr.fd 2000/10/09 v1.2 Font defs for fonts PL (MW)
 )
-LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    ... okay on input line 21.
 
 (/usr/share/texmf/tex/context/base/supp-pdf.tex
 (/usr/share/texmf/tex/context/base/supp-mis.tex
@@ -879,13 +879,13 @@ driver: pdftex
 
 (1in=72.27pt, 1cm=28.45pt)
 -----------------------
-Package hyperref Info: Link coloring OFF on input line 20.
+Package hyperref Info: Link coloring OFF on input line 21.
  (/usr/share/texmf/tex/latex/hyperref/nameref.sty
 Package: nameref 2003/12/03 v2.21 Cross-referencing by name of section
 \c@section@level=\count159
 )
-LaTeX Info: Redefining \ref on input line 20.
-LaTeX Info: Redefining \pageref on input line 20.
+LaTeX Info: Redefining \ref on input line 21.
+LaTeX Info: Redefining \pageref on input line 21.
  (./Prezentacja.out)
 (./Prezentacja.out)
 \openout3 = `Prezentacja.out'.
@@ -906,20 +906,7 @@ LaTeX Info: Redefining \pageref on input line 20.
 
 ] [8
 
-]
-\@verb\proccode=\box55
-
-Overfull \hbox (1.50334pt too wide) in paragraph at lines 64--65
-[][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (47.49382pt too wide) in paragraph at lines 65--66
-[][][][][][][][][][][][][][][] 
- []
-
-\@verb\oopcode=\box56
-[9
+] [9
 
 ] [10
 
@@ -931,13 +918,10 @@ Overfull \hbox (47.49382pt too wide) in paragraph at lines 65--66
 
 ] [14
 
-] [15
-
 ]
-LaTeX Font Info:    Font shape `OT4/cmss/m/it' in size <10.95> not available
-(Font)              Font shape `OT4/cmss/m/sl' tried instead on input line 139.
+[15
 
- [16
+] [16
 
 ] [17
 
@@ -945,46 +929,7 @@ LaTeX Font Info:    Font shape `OT4/cmss/m/it' in size <10.95> not available
 
 ] [19
 
-]
-LaTeX Font Info:    Try loading font information for OML+plm on input line 179.
-
-
-(/usr/share/texmf/tex/latex/platex/omlplm.fd
-File: omlplm.fd 2000/10/09 v1.2 Font defs for fonts PL (MW)
-)
-LaTeX Font Info:    Try loading font information for OMS+plsy on input line 179
-.
-
-(/usr/share/texmf/tex/latex/platex/omsplsy.fd
-File: omsplsy.fd 2000/10/09 v1.2 Font defs for fonts PL (MW)
-)
-LaTeX Font Info:    Try loading font information for OMX+plex on input line 179
-.
-
-(/usr/share/texmf/tex/latex/platex/omxplex.fd
-File: omxplex.fd 2000/10/09 v1.2 Font defs for fonts PL (MW)
-)
-LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <10.95> on input line 179.
-LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <8> on input line 179.
-LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <6> on input line 179.
-LaTeX Font Info:    Try loading font information for U+msa on input line 179.
-
-(/usr/share/texmf/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2002/01/19 v2.2g AMS font definitions
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 179.
-
-(/usr/share/texmf/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2002/01/19 v2.2g AMS font definitions
-)
-LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <9> on input line 179.
-LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <5> on input line 179.
- [20
+] [20
 
 ] [21
 
@@ -992,38 +937,11 @@ LaTeX Font Info:    External font `plex10' loaded for size
 
 ] [23
 
-]
-\@verb\testcode=\box57
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 189
-.
-LaTeX Font Info:    No file OMScmss.fd. on input line 189.
+] [24
 
+] [25
 
-LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbraceleft' on input line 189.
-
-LaTeX Font Info:    Try loading font information for OML+cmss on input line 192
-.
-LaTeX Font Info:    No file OMLcmss.fd. on input line 192.
-
-LaTeX Font Warning: Font shape `OML/cmss/m/n' undefined
-(Font)              using `OML/cmm/m/it' instead
-(Font)              for symbol `textless' on input line 192.
-
-
-Overfull \vbox (7.80315pt too high) detected at line 207
- []
-
-[24
-
-]
-\@verb\testcode=\box58
- [25
-
-]
-\@verb\testcode=\box59
- [26
+] [26
 
 ] [27
 
@@ -1031,9 +949,14 @@ Overfull \vbox (7.80315pt too high) detected at line 207
 
 ] [29
 
-] [30
+]
+[30
 
-] [31
+]
+LaTeX Font Info:    Font shape `OT4/cmss/m/it' in size <10.95> not available
+(Font)              Font shape `OT4/cmss/m/sl' tried instead on input line 191.
+
+ [31
 
 ] [32
 
@@ -1042,52 +965,91 @@ Overfull \vbox (7.80315pt too high) detected at line 207
 ] [34
 
 ]
-\@verb\testcode=\box60
+LaTeX Font Info:    Try loading font information for OML+plm on input line 231.
+
+ (/usr/share/texmf/tex/latex/platex/omlplm.fd
+File: omlplm.fd 2000/10/09 v1.2 Font defs for fonts PL (MW)
+)
+LaTeX Font Info:    Try loading font information for OMS+plsy on input line 231
+.
+
+(/usr/share/texmf/tex/latex/platex/omsplsy.fd
+File: omsplsy.fd 2000/10/09 v1.2 Font defs for fonts PL (MW)
+)
+LaTeX Font Info:    Try loading font information for OMX+plex on input line 231
+.
+
+(/usr/share/texmf/tex/latex/platex/omxplex.fd
+File: omxplex.fd 2000/10/09 v1.2 Font defs for fonts PL (MW)
+)
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <10.95> on input line 231.
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <8> on input line 231.
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <6> on input line 231.
+LaTeX Font Info:    Try loading font information for U+msa on input line 231.
+
+(/usr/share/texmf/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2002/01/19 v2.2g AMS font definitions
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 231.
+
+(/usr/share/texmf/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2002/01/19 v2.2g AMS font definitions
+)
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <9> on input line 231.
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <5> on input line 231.
  [35
 
-]
-\@verb\testcode=\box61
+] [36
 
+] [37
 
-LaTeX Font Warning: Font shape `OMS/cmss/m/it' undefined
-(Font)              using `OMS/cmss/m/n' instead
-(Font)              for symbol `textbackslash' on input line 303.
-
-[36
+] [38
 
 ]
-\@verb\testcode=\box62
+\@verb\testcode=\box55
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 241
+.
+LaTeX Font Info:    No file OMScmss.fd. on input line 241.
 
 
-LaTeX Font Warning: Font shape `OML/cmss/m/it' undefined
+LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbraceleft' on input line 241.
+
+LaTeX Font Info:    Try loading font information for OML+cmss on input line 244
+.
+LaTeX Font Info:    No file OMLcmss.fd. on input line 244.
+
+LaTeX Font Warning: Font shape `OML/cmss/m/n' undefined
 (Font)              using `OML/cmm/m/it' instead
-(Font)              for symbol `textgreater' on input line 325.
+(Font)              for symbol `textless' on input line 244.
 
-[37
 
-]
-\@verb\testcode=\box63
- [38
+Overfull \vbox (7.80315pt too high) detected at line 259
+ []
 
-] [39
-
-] [40
-
-] [41
+[39
 
 ]
-\@verb\testcode=\box64
- [42
+\@verb\testcode=\box56
+ [40
 
 ]
-\@verb\owocfail=\box65
- [43
+\@verb\testcode=\box57
+ [41
+
+] [42
+
+] [43
 
 ] [44
 
-]
-\@verb\testcode=\box66
- [45
+] [45
 
 ] [46
 
@@ -1097,12 +1059,68 @@ LaTeX Font Warning: Font shape `OML/cmss/m/it' undefined
 
 ] [49
 
-] [50
-
-] [51
+]
+\@verb\testcode=\box58
+ [50
 
 ]
+\@verb\testcode=\box59
+
+
+LaTeX Font Warning: Font shape `OMS/cmss/m/it' undefined
+(Font)              using `OMS/cmss/m/n' instead
+(Font)              for symbol `textbackslash' on input line 355.
+
+[51
+
+]
+\@verb\testcode=\box60
+
+
+LaTeX Font Warning: Font shape `OML/cmss/m/it' undefined
+(Font)              using `OML/cmm/m/it' instead
+(Font)              for symbol `textgreater' on input line 377.
+
 [52
+
+]
+\@verb\testcode=\box61
+ [53
+
+] [54
+
+] [55
+
+] [56
+
+]
+\@verb\testcode=\box62
+ [57
+
+]
+\@verb\owocfail=\box63
+ [58
+
+] [59
+
+]
+\@verb\testcode=\box64
+ [60
+
+] [61
+
+] [62
+
+] [63
+
+] [64
+
+] [65
+
+] [66
+
+]
+[67
 
 ]
 \tf@nav=\write6
@@ -1120,46 +1138,24 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 10160 strings out of 94500
- 165839 string characters out of 1176765
- 302025 words of memory out of 1000000
- 12948 multiletter control sequences out of 10000+50000
+ 10141 strings out of 94500
+ 165434 string characters out of 1176765
+ 292446 words of memory out of 1000000
+ 12905 multiletter control sequences out of 10000+50000
  19459 words of font info for 58 fonts, out of 500000 for 2000
  580 hyphenation exceptions out of 1000
- 41i,19n,68p,404b,1290s stack positions out of 1500i,500n,5000p,200000b,5000s
+ 41i,19n,68p,404b,1404s stack positions out of 1500i,500n,5000p,200000b,5000s
 PDF statistics:
- 2903 PDF objects out of 300000
- 123 named destinations out of 131072
- 161 words of extra memory for PDF output out of 65536
-
-! pdfTeX warning (dest): name{Navigation53} has been referenced but does not ex
-ist, replaced by a fixed one
-
-! pdfTeX warning (dest): name{Outline4.2.49} has been referenced but does not e
-xist, replaced by a fixed one
-
-! pdfTeX warning (dest): name{Outline4.1.48} has been referenced but does not e
-xist, replaced by a fixed one
-
-! pdfTeX warning (dest): name{Outline3.1.40} has been referenced but does not e
-xist, replaced by a fixed one
-
-! pdfTeX warning (dest): name{Outline2.3.32} has been referenced but does not e
-xist, replaced by a fixed one
-
-! pdfTeX warning (dest): name{Outline2.2.27} has been referenced but does not e
-xist, replaced by a fixed one
-
-! pdfTeX warning (dest): name{Outline2.1.21} has been referenced but does not e
-xist, replaced by a fixed one
-
- </var/cache/fonts/pk/ljfour/public/pl/plsy10.657pk> </var/cache/fonts/pk/ljfou
-r/public/cm/cmmi10.657pk> </var/cache/fonts/pk/ljfour/public/cm/cmsy10.657pk> <
-/var/cache/fonts/pk/ljfour/public/pl/plss9.600pk> </var/cache/fonts/pk/ljfour/p
-ublic/pl/plss8.450pk> </var/cache/fonts/pk/ljfour/public/pl/plss8.600pk> </var/
-cache/fonts/pk/ljfour/public/pl/plssi10.657pk> </var/cache/fonts/pk/ljfour/publ
-ic/pl/plss10.600pk> </var/cache/fonts/pk/ljfour/public/pl/plssbx10.657pk> </var
-/cache/fonts/pk/ljfour/public/pl/plssbx10.480pk> </var/cache/fonts/pk/ljfour/pu
-blic/pl/plss10.657pk> </var/cache/fonts/pk/ljfour/public/pl/plss12.720pk> </var
-/cache/fonts/pk/ljfour/public/pl/plssbx10.360pk>
-Output written on Prezentacja.pdf (52 pages, 725392 bytes).
+ 3418 PDF objects out of 300000
+ 147 named destinations out of 131072
+ 97 words of extra memory for PDF output out of 65536
+ </var/cache/fonts/pk/ljfour/public/pl/plsy10.657pk> </var/cache/fonts/pk/ljf
+our/public/cm/cmmi10.657pk> </var/cache/fonts/pk/ljfour/public/cm/cmsy10.657pk>
+ </var/cache/fonts/pk/ljfour/public/pl/plssbx10.657pk> </var/cache/fonts/pk/ljf
+our/public/pl/plss9.600pk> </var/cache/fonts/pk/ljfour/public/pl/plss8.450pk> <
+/var/cache/fonts/pk/ljfour/public/pl/plss8.600pk> </var/cache/fonts/pk/ljfour/p
+ublic/pl/plssi10.657pk> </var/cache/fonts/pk/ljfour/public/pl/plss10.600pk> </v
+ar/cache/fonts/pk/ljfour/public/pl/plssbx10.480pk> </var/cache/fonts/pk/ljfour/
+public/pl/plss10.657pk> </var/cache/fonts/pk/ljfour/public/pl/plss12.720pk> </v
+ar/cache/fonts/pk/ljfour/public/pl/plssbx10.360pk>
+Output written on Prezentacja.pdf (67 pages, 852328 bytes).

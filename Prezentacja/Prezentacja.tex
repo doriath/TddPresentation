@@ -10,6 +10,7 @@
 %\usepackage[bars]{beamerthemetree} % Beamer theme v 2.2
 \usetheme{Berlin}                  % Beamer theme v 3.0
 %\usecolortheme{lily}                % Beamer color theme
+\usepackage{color}
 
 %\lstset{language=R,frame=ltrb,framesep=5pt,basicstyle=\normalsize,keywordstyle=\ttfamily\color{OliveGreen},identifierstyle=\ttfamily\color{CadetBlue}\bfseries,commentstyle=\color{Brown},stringstyle=\ttfamily,showstringspaces=ture}
 \lstset{language=C++}
@@ -45,37 +46,88 @@
 %\begin{frame}
 \begin{frame}
  \frametitle{Wstęp}
-%\begin{itemize}
+\begin{enumerate}
+ \item Co rozumiemy pod pojęciem testu? % pytanie do publiczności...
+ \pause \item Co i po co testujemy? % weryfikacja poprawności, sprawdzenie działania, rodzaje testów
+\end{enumerate}
+\end{frame}
 
-%\item Programowanie obiektowe modeluje świat za pomocą obiektów, które posiadają atrybuty i metody.
-%\end{itemize}
-\begin{block}{Programowanie obiektowe}
- W obiektowym paradygmacie programowania modeluje się projekt z użyciem obiektów - czyli elementów, które mają swój stan, oraz zachowanie, czyli metody które można na nich wykonać.
-\end{block}
+\begin{frame}
+\frametitle{Rodzaje testów}
+ \begin{enumerate}
+  \item Testy jednostkowe
+  \pause \item Testy integracyjne
+  \pause \item Testy akceptacyjne (funkcjonalne)
+\end{enumerate}
+\end{frame}
+
+%\defverbatim[colored]\proccode{%
+%   \begin{lstlisting}[frame=single,emph={ga},emphstyle=\color{olive}]
+%int dlugosc = dlugoscTekstu(string);
+%string kawalek = kawalekTekstu(string, od, do);
+%bool porownanie = porownajDwaTeksty(string1, string2);
+%\end{lstlisting}}%
+%\defverbatim[colored]\oopcode{%
+% \begin{lstlisting}[frame=single,emph={ga},emphstyle=\color{olive}]
+%int dlugosc = string.Dlugosc();
+%string kawalek = string.Wytnij(od, do);
+%bool porownanie = string1.JestRowny(string2);
+%\end{lstlisting}}%
+%\frame{%
+%   \frametitle{Przykład proceduralny oraz OOP}
+%   \proccode
+%   \oopcode
+%}%
+
+\section{TDD}
+\begin{frame}
+\frametitle{Test driven development}
+Proces normalny
+ \begin{enumerate}
+  \item Design aplikacji
+  \pause \item Implementacja
+  \pause \item Testy 
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+\frametitle{Test driven development}
+Test driven development
+ \begin{enumerate}
+  \item Testy
+  \pause \item Minimum kodu
+  \pause \item Design %jako skutek uboczny ;)
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+\frametitle{Test driven development}
+Czyli innymi słowy
+ \begin{enumerate}
+\item Implementujemy testy z wykorzystaniem nieistniejących obiektów.
+\pause \item Generujemy niezbędne "stuby"
+\pause \item Uruchamiamy testy
+\end{enumerate}
 \pause
-\begin{block}{}
- Taka technika programowania jest dla człowieka dość intuicyjna, stąd jej popularność. Wiąże ponadto dane z zachowaniem, czego paradygmat proceduralny nie oferował.
+\begin{block}{Krok 1}
+	\textcolor{red}{RED}
 \end{block}
 \end{frame}
 
-\defverbatim[colored]\proccode{%
-   \begin{lstlisting}[frame=single,emph={ga},emphstyle=\color{olive}]
-int dlugosc = dlugoscTekstu(string);
-string kawalek = kawalekTekstu(string, od, do);
-bool porownanie = porownajDwaTeksty(string1, string2);
-\end{lstlisting}}%
-\defverbatim[colored]\oopcode{%
-   \begin{lstlisting}[frame=single,emph={ga},emphstyle=\color{olive}]
-int dlugosc = string.Dlugosc();
-string kawalek = string.Wytnij(od, do);
-bool porownanie = string1.JestRowny(string2);
-\end{lstlisting}}%
-\frame{%
-   \frametitle{Przykład proceduralny oraz OOP}
-   \proccode
-   \oopcode
-}%
-
+\begin{frame}
+\frametitle{Test driven development}
+ \begin{enumerate}
+\item Implementujemy minimum kodu "przechodzącego" testy
+\end{enumerate}
+\pause
+\begin{block}{Krok 2}
+	\textcolor{green}{GREEN}
+\end{block}
+\pause
+\begin{block}{Krok 3}
+ Refactor
+\end{block}
+\end{frame}
 
 \begin{frame}
  \frametitle{Modelowanie świata}
