@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="01bd2699-c102-470c-a423-6216f3e26446" name="Piotr@MIRACLE 2009-12-06 00:04:25" runUser="MIRACLE\Piotr" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestRunConfiguration name="Default Run Configuration" id="cb89b8f1-76fa-4637-b6d5-ecd25f1b13ba">
+    <Deployment runDeploymentRoot="D:\projekty\svn\lectures\TddPresentation\Kody\MoqOverview\MoqOverviewTests\bin\Debug\TestResults\Piotr_MIRACLE 2009-12-06 00_04_25" />
+    <Hosts skipUnhostableTests="false" />
+    <TestTypeSpecific />
+  </TestRunConfiguration>
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <Times creation="2009-12-06T00:04:25.2031250+01:00" queuing="2009-12-06T00:04:26.4687500+01:00" start="2009-12-06T00:04:26.7031250+01:00" finish="2009-12-06T00:04:27.1562500+01:00" />
+  <TestDefinitions>
+    <UnitTest name="TestMethod1" storage="d:\projekty\svn\lectures\tddpresentation\kody\moqoverview\moqoverviewtests\bin\debug\moqoverviewtests.dll" id="a1ed4104-4f9e-3dff-758c-5ab65c34f4f0">
+      <Css projectStructure="" iteration="" />
+      <Execution timeOut="1800000" id="e4994428-d445-47de-8f9e-6bbd2ec699fe" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <TestMethod codeBase="D:/projekty/svn/lectures/TddPresentation/Kody/MoqOverview/MoqOverviewTests/bin/Debug/MoqOverviewTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter" className="MoqOverviewTests.UnitTest1, MoqOverviewTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="a1ed4104-4f9e-3dff-758c-5ab65c34f4f0" executionId="e4994428-d445-47de-8f9e-6bbd2ec699fe" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="e4994428-d445-47de-8f9e-6bbd2ec699fe" testId="a1ed4104-4f9e-3dff-758c-5ab65c34f4f0" testName="TestMethod1" computerName="MIRACLE" duration="00:00:00.0163730" startTime="2009-12-06T00:04:26.8125000+01:00" endTime="2009-12-06T00:04:27.0625000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -1,0 +1,12 @@
+D:\projekty\svn\wyklady\TddPresentation\kody\MoqOverview\MoqOverview\obj\Debug\ResolveAssemblyReference.cache
+D:\projekty\svn\wyklady\TddPresentation\kody\MoqOverview\MoqOverview\bin\Debug\Repo\Employees.xml
+D:\projekty\svn\wyklady\TddPresentation\kody\MoqOverview\MoqOverview\bin\Debug\MoqOverview.exe
+D:\projekty\svn\wyklady\TddPresentation\kody\MoqOverview\MoqOverview\bin\Debug\MoqOverview.pdb
+D:\projekty\svn\wyklady\TddPresentation\kody\MoqOverview\MoqOverview\obj\Debug\MoqOverview.exe
+D:\projekty\svn\wyklady\TddPresentation\kody\MoqOverview\MoqOverview\obj\Debug\MoqOverview.pdb
+D:\projekty\svn\lectures\TddPresentation\Kody\MoqOverview\MoqOverview\obj\Debug\MoqOverview.exe
+D:\projekty\svn\lectures\TddPresentation\Kody\MoqOverview\MoqOverview\obj\Debug\MoqOverview.pdb
+D:\projekty\svn\lectures\TddPresentation\Kody\MoqOverview\MoqOverview\bin\Debug\Repo\Employees.xml
+D:\projekty\svn\lectures\TddPresentation\Kody\MoqOverview\MoqOverview\bin\Debug\MoqOverview.exe
+D:\projekty\svn\lectures\TddPresentation\Kody\MoqOverview\MoqOverview\bin\Debug\MoqOverview.pdb
+D:\projekty\svn\lectures\TddPresentation\Kody\MoqOverview\MoqOverview\obj\Debug\ResolveAssemblyReference.cache

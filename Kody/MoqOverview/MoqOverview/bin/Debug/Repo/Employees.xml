@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<employees>
+  <employee employeeId="1">
+    <firstName>Tadeusz</firstName>
+    <lastName>Morzy</lastName>
+    <salary>1000</salary>
+  </employee>
+  <employee employeeId="2">
+    <firstName>Jan</firstName>
+    <lastName>Węglarz</lastName>
+    <salary>2000</salary>
+  </employee>
+</employees>

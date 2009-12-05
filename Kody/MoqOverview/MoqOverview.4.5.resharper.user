@@ -1,0 +1,59 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">True</setting>
+    </boolean>
+  </SettingsComponent>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="2821C1E6-3B84-4227-8698-1FBBD0F791E6/f:AuthoringTests.txt" caret="323" fromTop="5" />
+      <File id="2821C1E6-3B84-4227-8698-1FBBD0F791E6/f:UnitTest1.cs" caret="363" fromTop="16" />
+      <File id="0C0E86AD-E264-4252-879E-BE3A08459C6E/f:Program.cs" caret="196" fromTop="11" />
+      <File id="0C0E86AD-E264-4252-879E-BE3A08459C6E/d:Repo/f:Employees.xml" caret="298" fromTop="10" />
+      <File id="0C0E86AD-E264-4252-879E-BE3A08459C6E/d:Repo/f:Employee.cs" caret="184" fromTop="6" />
+      <File id="0C0E86AD-E264-4252-879E-BE3A08459C6E/d:Repo/f:IEmployeeRepository.cs" caret="159" fromTop="6" />
+      <File id="0C0E86AD-E264-4252-879E-BE3A08459C6E/d:Repo/f:XmlRepository.cs" caret="473" fromTop="18" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="0C0E86AD-E264-4252-879E-BE3A08459C6E/f:Program.cs" caret="143" fromTop="9" />
+      <File id="0C0E86AD-E264-4252-879E-BE3A08459C6E/d:Repo/f:Employees.xml" caret="327" fromTop="11" />
+      <File id="0C0E86AD-E264-4252-879E-BE3A08459C6E/d:Repo/f:Employees.xml" caret="66" fromTop="2" />
+      <File id="0C0E86AD-E264-4252-879E-BE3A08459C6E/d:Repo/f:Employees.xml" caret="204" fromTop="7" />
+      <File id="0C0E86AD-E264-4252-879E-BE3A08459C6E/d:Repo/f:Employees.xml" caret="326" fromTop="11" />
+      <File id="0C0E86AD-E264-4252-879E-BE3A08459C6E/d:Repo/f:IEmployeeRepository.cs" caret="172" fromTop="13" />
+      <File id="0C0E86AD-E264-4252-879E-BE3A08459C6E/d:Repo/f:IEmployeeRepository.cs" caret="172" fromTop="8" />
+      <File id="0C0E86AD-E264-4252-879E-BE3A08459C6E/d:Repo/f:XmlRepository.cs" caret="266" fromTop="9" />
+      <File id="0C0E86AD-E264-4252-879E-BE3A08459C6E/d:Repo/f:XmlRepository.cs" caret="652" fromTop="17" />
+      <File id="0C0E86AD-E264-4252-879E-BE3A08459C6E/d:Repo/f:Employee.cs" caret="173" fromTop="6" />
+      <File id="0C0E86AD-E264-4252-879E-BE3A08459C6E/d:Repo/f:XmlRepository.cs" caret="187" fromTop="7" />
+      <File id="0C0E86AD-E264-4252-879E-BE3A08459C6E/d:Repo/f:XmlRepository.cs" caret="867" fromTop="22" />
+      <File id="0C0E86AD-E264-4252-879E-BE3A08459C6E/d:Repo/f:XmlRepository.cs" caret="221" fromTop="7" />
+      <File id="0C0E86AD-E264-4252-879E-BE3A08459C6E/d:Repo/f:XmlRepository.cs" caret="473" fromTop="18" />
+    </RecentEdits>
+  </RecentFiles>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerMSTest>
+    <UseTestRunConfigFromMetadataFile>False</UseTestRunConfigFromMetadataFile>
+  </UnitTestRunnerMSTest>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="string" priority="1" />
+      <Item value="double" priority="0" />
+      <Item value="IEmployeeRepository" priority="0" />
+      <Item value="ctor" priority="0" />
+      <Item value="xDoc" priority="1" />
+      <Item value="Employee" priority="1" />
+      <Item value="c" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.Linq.XElement">
+      <Item value="Element" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

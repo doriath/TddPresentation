@@ -1,0 +1,21 @@
+using System;
+
+namespace MoqOverview.Repo
+{
+    public class Employee
+    {
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public double Salary { get; set; }
+
+        public virtual void RaiseSalaryLinear(double howMuch)
+        {
+            Salary += howMuch;
+        }
+
+        public override string ToString()
+        {
+            return String.Format ("{0} {1} {2:0.00}z³", FirstName, LastName, Salary);
+        }
+    }
+}
