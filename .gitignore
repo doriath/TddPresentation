@@ -6,3 +6,9 @@
 *.out
 *.snm
 *.toc
+bin
+obj
+*.vsmdi
+*.suo
+*.resharper.user
+*.testrunconfig
