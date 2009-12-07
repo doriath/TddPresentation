@@ -12,3 +12,4 @@ obj
 *.suo
 *.resharper.user
 *.testrunconfig
+_ReSharper*/

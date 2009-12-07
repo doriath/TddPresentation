@@ -1,0 +1,7 @@
+* Evaluating template “Hello, ${name}” with the value “Reader” for variable “name” results in the string “Hello, Reader”.
+* Evaluating template “${greeting}, ${name}” with values “Hi” and “Reader”, respectively, results in the string “Hi, Reader”.
+* Evaluating template “Hello, ${name}” with values “Hi” and “Reader” for variables “doesnotexist” and “name”, respectively, results in the string “Hello, Reader”.
+* Evaluating template “Hello, ${name}” with no value for variable “name” raises a MissingValueError.
+
+
+* Evaluating template "${one}, ${two}, ${three}", ("1", "${foo}", "3") results in the string "1, ${foo}, 3"
